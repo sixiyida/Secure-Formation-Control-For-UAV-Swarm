@@ -1,0 +1,2 @@
+exp_avoid_collision
+-DCATKIN_DEVEL_PREFIX=/home/sixiyida/exp_uavs_avoid_collision/devel -DCMAKE_INSTALL_PREFIX=/home/sixiyida/exp_uavs_avoid_collision/install -G Unix Makefiles

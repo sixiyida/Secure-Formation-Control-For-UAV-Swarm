@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/sixiyida/swarm_sync_sim/devel/lib/python3/dist-packages",
+        "/home/sixiyida/nlink_parser_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/sixiyida/swarm_sync_sim/devel/lib/python3/dist-packages",
+        "/home/sixiyida/nlink_parser_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

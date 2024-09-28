@@ -1,0 +1,300 @@
+uavs:
+  - id: 1 # topic id /uav${id}/mavros/...
+    mav_sys_id: 1 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.11
+    drone_port: 14560
+    gcs_port: 9010
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone1
+    nluwb_tag_id: 1
+    init_pose: [0.49, -5, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 2 # topic id /uav${id}/mavros/...
+    mav_sys_id: 2 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.12
+    drone_port: 14560
+    gcs_port: 9020
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone2
+    nluwb_tag_id: 2
+    init_pose: [1.2, -0.7, 0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 3 # topic id /uav${id}/mavros/...
+    mav_sys_id: 3 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.13
+    drone_port: 14560
+    gcs_port: 9030
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone3
+    nluwb_tag_id: 3
+    init_pose: [1.23, 0.5, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 4 # topic id /uav${id}/mavros/...
+    mav_sys_id: 4 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.14
+    drone_port: 14560
+    gcs_port: 9040
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone4
+    nluwb_tag_id: 4
+    init_pose: [0.8, -1.2, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 5 # topic id /uav${id}/mavros/...
+    mav_sys_id: 5 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.15
+    drone_port: 14560
+    gcs_port: 9050
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone5
+    nluwb_tag_id: 5
+    init_pose: [5.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 6 # topic id /uav${id}/mavros/...
+    mav_sys_id: 6 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.16
+    drone_port: 14560
+    gcs_port: 9060
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone6
+    nluwb_tag_id: 6
+    init_pose: [6.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 7 # topic id /uav${id}/mavros/...
+    mav_sys_id: 7 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.17
+    drone_port: 14560
+    gcs_port: 9070
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone7
+    nluwb_tag_id: 7
+    init_pose: [7.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 8 # topic id /uav${id}/mavros/...
+    mav_sys_id: 8 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.18
+    drone_port: 14560
+    gcs_port: 9080
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone8
+    nluwb_tag_id: 8
+    init_pose: [8.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 9 # topic id /uav${id}/mavros/...
+    mav_sys_id: 9 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.19
+    drone_port: 14560
+    gcs_port: 9090
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone9
+    nluwb_tag_id: 9
+    init_pose: [9.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 10 # topic id /uav${id}/mavros/...
+    mav_sys_id: 10 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.20
+    drone_port: 14560
+    gcs_port: 9100
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone10
+    nluwb_tag_id: 10
+    init_pose: [10.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 11 # topic id /uav${id}/mavros/...
+    mav_sys_id: 11 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.21
+    drone_port: 14560
+    gcs_port: 9110
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone11
+    nluwb_tag_id: 11
+    init_pose: [11.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 12 # topic id /uav${id}/mavros/...
+    mav_sys_id: 12 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.22
+    drone_port: 14560
+    gcs_port: 9120
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone12
+    nluwb_tag_id: 12
+    init_pose: [12.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 13 # topic id /uav${id}/mavros/...
+    mav_sys_id: 13 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.23
+    drone_port: 14560
+    gcs_port: 9130
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone13
+    nluwb_tag_id: 13
+    init_pose: [13.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 14 # topic id /uav${id}/mavros/...
+    mav_sys_id: 14 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.24
+    drone_port: 14560
+    gcs_port: 9140
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone14
+    nluwb_tag_id: 14
+    init_pose: [14.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 15 # topic id /uav${id}/mavros/...
+    mav_sys_id: 15 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.25
+    drone_port: 14560
+    gcs_port: 9150
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone15
+    nluwb_tag_id: 15
+    init_pose: [15.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 16 # topic id /uav${id}/mavros/...
+    mav_sys_id: 16 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.26
+    drone_port: 14560
+    gcs_port: 9160
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone16
+    nluwb_tag_id: 16
+    init_pose: [16.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 17 # topic id /uav${id}/mavros/...
+    mav_sys_id: 17 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.27
+    drone_port: 14560
+    gcs_port: 9170
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone17
+    nluwb_tag_id: 17
+    init_pose: [17.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 18 # topic id /uav${id}/mavros/...
+    mav_sys_id: 18 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.28
+    drone_port: 14560
+    gcs_port: 9180
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone18
+    nluwb_tag_id: 18
+    init_pose: [18.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 19 # topic id /uav${id}/mavros/...
+    mav_sys_id: 19 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.29
+    drone_port: 14560
+    gcs_port: 9190
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone19
+    nluwb_tag_id: 19
+    init_pose: [19.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 20 # topic id /uav${id}/mavros/...
+    mav_sys_id: 20 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.30
+    drone_port: 14560
+    gcs_port: 9200
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone20
+    nluwb_tag_id: 20
+    init_pose: [20.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+    
+  - id: 21 # topic id /uav${id}/mavros/...
+    mav_sys_id: 21 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.31
+    drone_port: 14560
+    gcs_port: 9210
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone21
+    nluwb_tag_id: 21
+    init_pose: [21.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 22 # topic id /uav${id}/mavros/...
+    mav_sys_id: 22 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.32
+    drone_port: 14560
+    gcs_port: 9220
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone22
+    nluwb_tag_id: 22
+    init_pose: [22.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 23 # topic id /uav${id}/mavros/...
+    mav_sys_id: 23 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.33
+    drone_port: 14560
+    gcs_port: 9230
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone23
+    nluwb_tag_id: 23
+    init_pose: [23.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 24 # topic id /uav${id}/mavros/...
+    mav_sys_id: 24 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.34
+    drone_port: 14560
+    gcs_port: 9240
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone24
+    nluwb_tag_id: 24
+    init_pose: [24.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 25 # topic id /uav${id}/mavros/...
+    mav_sys_id: 25 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.35
+    drone_port: 14560
+    gcs_port: 9250
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone25
+    nluwb_tag_id: 25
+    init_pose: [25.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 26 # topic id /uav${id}/mavros/...
+    mav_sys_id: 26 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.36
+    drone_port: 14560
+    gcs_port: 9260
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone26
+    nluwb_tag_id: 26
+    init_pose: [26.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 27 # topic id /uav${id}/mavros/...
+    mav_sys_id: 27 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.37
+    drone_port: 14560
+    gcs_port: 9270
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone27
+    nluwb_tag_id: 27
+    init_pose: [27.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 28 # topic id /uav${id}/mavros/...
+    mav_sys_id: 28 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.38
+    drone_port: 14560
+    gcs_port: 9280
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone28
+    nluwb_tag_id: 28
+    init_pose: [28.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 29 # topic id /uav${id}/mavros/...
+    mav_sys_id: 29 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.39
+    drone_port: 14560
+    gcs_port: 9290
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone29
+    nluwb_tag_id: 29
+    init_pose: [29.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation
+
+  - id: 30 # topic id /uav${id}/mavros/...
+    mav_sys_id: 30 # px4 drone MAV_SYS_ID in real experiment
+    ip: 192.168.51.40
+    drone_port: 14560
+    gcs_port: 9300
+    pose_source: mocap # mocap, nluwb, none
+    mocap_markerset: minidrone30
+    nluwb_tag_id: 30
+    init_pose: [30.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # [x(m),y(m),z(m),roll,pitch,yaw(deg)]  # only for simulation

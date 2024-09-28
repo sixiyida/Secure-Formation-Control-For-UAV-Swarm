@@ -1,0 +1,107 @@
+%% 绘图
+
+%% 图1 X-Y编队坐标 
+figure(1);
+
+len = length(dout);
+
+color = ['k', 'b', 'g', 'r'];
+
+marker = ['^', 's', 's', 's'];
+
+% for i = 1:N
+%     plot(dout(1, 4*i - 3), dout(1, 4*i - 1), 'Color', color(i), 'Marker', 'o', 'MarkerSize', 6, 'LineWidth', 4);
+%     hold on;
+%     plot(dout(len, 4*i - 3), dout(len, 4*i - 1), 'Color', color(i), 'Marker', marker(i), 'MarkerSize', 6, 'LineWidth', 4);
+%     hold on;
+%     plot(dout(:, 4*i - 3), dout(:, 4*i - 1), 'Color', color(i), 'LineWidth', 2);
+%     hold on;
+% end
+
+for i = 1:N
+    obs(i) = animatedline('Color', 'y', 'Marker', 'o', 'MarkerSize', 6, 'LineWidth', 4);
+    Initmark(i) = animatedline('Color', color(i), 'Marker', 'o', 'MarkerSize', 6, 'LineWidth', 4);
+    line(i) = animatedline('Color', color(i), 'LineWidth', 2);
+    Mark(i) = animatedline('Color', color(i), 'Marker', marker(i), 'MarkerSize', 6, 'LineWidth', 4);
+end
+
+pause(5);
+
+for j=1:len
+    for i = 1:N
+        if (j == 1)
+            addpoints(Initmark(i),dout(j, 4*i - 3), dout(j, 4*i - 1)); 
+        end
+        delete(Mark(i));
+        Mark(i) = animatedline('Color', color(i), 'Marker', marker(i), 'MarkerSize', 6, 'LineWidth', 4);
+        addpoints(line(i),dout(j, 4*i - 3), dout(j, 4*i - 1));
+        addpoints(Mark(i),dout(j, 4*i - 3), dout(j, 4*i - 1));
+        %MakeGif('GifTest.Gif',j);
+    end
+    pause(0.0001);
+    xlabel('$x_{iX}(t)$','interpreter','latex','FontName','Times NewRoman','FontSize',16);
+    ylabel('$x_{iY}(t)$','interpreter','latex','FontName','Times NewRoman','FontSize',16);
+    axis([-10 50 -70 10]);
+    drawnow;
+    grid on;
+    %delpoints(Mark(i),dout(j, 4*i - 3), dout(j, 4*i - 1));
+end
+
+grid on
+xlabel('$x_{iX}(t)$','interpreter','latex','FontName','Times NewRoman','FontSize',16);
+ylabel('$x_{iY}(t)$','interpreter','latex','FontName','Times NewRoman','FontSize',16);
+axis equal;
+
+%% 图2 X轴速度-时间
+figure(2);
+
+for i = 1:N
+    plot(tout, dout(:, 4*i - 2), 'Color', color(i), 'LineWidth', 2);
+    hold on;
+end
+
+grid on
+xlabel('$t(s)$','interpreter','latex','FontName','Times NewRoman','FontSize',16);
+ylabel('$v_{iX}(t)$','interpreter','latex','FontName','Times NewRoman','FontSize',16);
+
+figure(2);
+
+for i = 1:N
+    plot(tout, dout(:, 4*i - 2), 'Color', color(i), 'LineWidth', 2);
+    hold on;
+end
+
+grid on
+xlabel('$t(s)$','interpreter','latex','FontName','Times NewRoman','FontSize',16);
+ylabel('$v_{iX}(t)$','interpreter','latex','FontName','Times NewRoman','FontSize',16);
+
+%% 图3 σ(t)
+figure(3);
+
+
+plot(tout, sigma_t - 1,'Color', 'b', 'LineWidth', 2)
+
+
+grid on
+xlabel('$t(s)$','interpreter','latex','FontName','Times NewRoman','FontSize',16);
+ylabel('$\sigma(s)$','interpreter','latex','FontName','Times NewRoman','FontSize',16);
+axis([0 100 -1 4])
+
+%% 图4 跟踪误差
+figure(4);
+miss_vec = zeros(10001,12);
+miss = zeros(10001,1);
+for i = 1:10000
+    h = [];
+    for j = 1:3
+        t = i/100;
+        h = [h get_h(j, t)'];
+    end
+    miss_vec(i,:) = dout(i, 5:16) - h - kron(dout(i, 1:4),zeros(1,3));
+    miss(i,1) = miss_vec(i,:) * miss_vec(i,:)';
+end
+
+plot(tout, miss,'Color', 'b', 'LineWidth', 2)
+xlabel('$t(s)$','interpreter','latex','FontName','Times NewRoman','FontSize',16);
+ylabel('$\zeta^T\zeta$','interpreter','latex','FontName','Times NewRoman','FontSize',16);
+grid on

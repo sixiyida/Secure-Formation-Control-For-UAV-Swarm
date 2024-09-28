@@ -1,0 +1,2 @@
+exp_algorithm
+-DCATKIN_DEVEL_PREFIX=/home/sixiyida/exp_uavs_dos/devel -DCMAKE_INSTALL_PREFIX=/home/sixiyida/exp_uavs_dos/install -G Unix Makefiles
